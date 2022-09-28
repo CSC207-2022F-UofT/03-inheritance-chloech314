@@ -99,8 +99,8 @@ public abstract class Bag {
         if(this.numberOfContents == 0) {
             return null;
         }
-        String removed = this.contents[this.numberOfContents];
-        String[] newArray = new String[this.numberOfContents];
+        String removed = this.contents[this.numberOfContents - 1];
+        String[] newArray = new String[0];
 
         for(int i = 0; i < this.numberOfContents; i++){
             newArray[i] = this.contents[i];
