@@ -102,7 +102,7 @@ public abstract class Bag {
         String removed = this.contents[this.numberOfContents - 1];
         String[] newArray = new String[this.numberOfContents - 1];
 
-        for(int i = 0; i < this.numberOfContents; i++){
+        for(int i = 0; i < this.numberOfContents - 1; i++){
             newArray[i] = this.contents[i];
         }
         this.contents = newArray;
