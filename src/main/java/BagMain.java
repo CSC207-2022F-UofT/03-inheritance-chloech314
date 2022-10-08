@@ -16,16 +16,18 @@ class BagMain {
      */
     public static void enhanceBags(Bag[] bags, boolean double_enhance_handbags) {
         // TODO: Implement this.
-        for(int i = 0; i < bags.length; i++) {
+        for (int i = 0; i < bags.length; i++) {
             bags[i].enhance();
         }
         if (double_enhance_handbags == true) {
-            for(int i = 0; i < bags.length; i++) {
-                bags[i].enhance();
+            for (int i = 0; i < bags.length; i++) {
+                if (bags[i] instanceof HandBag) {
+                    bags[i].enhance();
+                }
+
             }
         }
     }
-
     /**
      * TODO: Implement this method
      * Return the total number of straps in CrossbodyBags in bags.
