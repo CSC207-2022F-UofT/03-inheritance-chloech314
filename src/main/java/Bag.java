@@ -98,9 +98,6 @@ public abstract class Bag {
      * @return
      */
     public String popItem() {
-        if(this.numberOfContents == 0) {
-            return null;
-        }
         String removed = this.contents[numberOfContents - 1];
         this.contents[numberOfContents - 1] = null;
         numberOfContents -= 1;
