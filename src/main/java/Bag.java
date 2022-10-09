@@ -101,9 +101,9 @@ public abstract class Bag {
         if(this.numberOfContents == 0) {
             return null;
         }
-        String removed = this.contents[this.numberOfContents - 1];
-        this.contents[this.numberOfContents - 1] = null;
-        this.numberOfContents -= 1;
+        String removed = this.contents[numberOfContents - 1];
+        this.contents[numberOfContents - 1] = null;
+        numberOfContents -= 1;
         return removed;
     }
 
