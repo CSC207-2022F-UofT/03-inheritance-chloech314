@@ -29,10 +29,11 @@ public abstract class Bag {
      * its contents.)
      */
     public Bag(String colour, int bagCapacity) {
-        String[] emptyArr = new String[0];
+
         this.numberOfContents = 0;
         this.capacity = bagCapacity;
         this.color = colour;
+        String[] emptyArr = new String[bagCapacity];
         this.contents = emptyArr;
 
     }
